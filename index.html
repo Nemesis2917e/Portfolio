@@ -1,435 +1,67 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saad Arshad - Portfolio</title>
-    
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav><br><br>
-        <div class="header-content">
-            <h1>Hi, I'm <b style="color:#00FF40"> Saad Arshad</b></h1><br>
-            <p>A Frontend Web Developer & App Developer</p>
-            <br><br>
-            <a href="#projects" class="btn">View My Work</a>
-        </div>
-    </header>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a versatile developer with expertise in web development and app creation.<br> <br>I focus on building innovative, user-friendly solutions and delivering high-quality results tailored to evolving needs. <br><br>Driven by curiosity and a commitment to excellence, I aim to create impactful digital experiences.</p>
-        <br><img src="laptop.jpg" width="100%" height="100%">
-        
-           
-    </section>
+        header {
+            background: linear-gradient(to bottom, #2596be, #586b98, #5d4462, #452830, #21130d);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
 
-    
-    
-    
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-grid">
-            <div class="project">
-                <h3>Bill Check PK</h3>
-                <p>Bill Check PK is a Android Web App <br> <br>That Lets People Check Their <br><br> Electricity, Gas, Water, Internet & Landline<br><br> Bills Online.</p><br> 
-     
-<button onclick="btn('https://play.google.com/store/apps/details?id=com.nemesis.billcheckpk')" class="playstore-button">
-  <svg
-    viewBox="0 0 512 512"
-    class="icon"
-    fill="currentColor"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path
-      d="M99.617 8.057a50.191 50.191 0 00-38.815-6.713l230.932 230.933 74.846-74.846L99.617 8.057zM32.139 20.116c-6.441 8.563-10.148 19.077-10.148 30.199v411.358c0 11.123 3.708 21.636 10.148 30.199l235.877-235.877L32.139 20.116zM464.261 212.087l-67.266-37.637-81.544 81.544 81.548 81.548 67.273-37.64c16.117-9.03 25.738-25.442 25.738-43.908s-9.621-34.877-25.749-43.907zM291.733 279.711L60.815 510.629c3.786.891 7.639 1.371 11.492 1.371a50.275 50.275 0 0027.31-8.07l266.965-149.372-74.849-74.847z"
-    ></path>
-  </svg>
-  <span class="texts">
-    <span class="text-1">GET IT ON</span>
-    <span class="text-2">Google Play</span>
-  </span>
-</button>
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
 
-                    
-  </div>
- 
-            <br><br>          
-            
-          <div class="project">
-                <h3>Tic Master</h3>
-                <p>Tic Master is a Tic Tac Toe Game<br><br> It has Multiple Modes like 5x5, 4x4 & 3x3<br><br>It has Two Modes: <br><br>AI Opponent and Local Multiplayer</p>
-              <br>  <button onclick="btn('https://play.google.com/store/apps/details?id=com.nemesis.billcheckpk')" class="playstore-button">
-                  
-  <svg viewBox="0 0 512 512" class="icon" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-    <path d="M99.617 8.057a50.191 50.191 0 00-38.815-6.713l230.932 230.933 74.846-74.846L99.617 8.057zM32.139 20.116c-6.441 8.563-10.148 19.077-10.148 30.199v411.358c0 11.123 3.708 21.636 10.148 30.199l235.877-235.877L32.139 20.116zM464.261 212.087l-67.266-37.637-81.544 81.544 81.548 81.548 67.273-37.64c16.117-9.03 25.738-25.442 25.738-43.908s-9.621-34.877-25.749-43.907zM291.733 279.711L60.815 510.629c3.786.891 7.639 1.371 11.492 1.371a50.275 50.275 0 0027.31-8.07l266.965-149.372-74.849-74.847z" ></path> </svg>
-  <span class="texts">
-    <span class="text-1">GET IT ON</span>
-    <span class="text-2">Google Play</span>
-  </span>
-</button>
-              
-              
-              
-          </div>
-            
-            
-             
-            <div class="project">
-                <h3>Memory Game</h3>
-                <p>It is a Basic Memory Card Game <br><br> In Which Player has To Find Similar Cards<br><br>From a Group of Cards<br></p><br>
-                
-          <button onclick="btn('https://play.google.com/store/apps/details?id=com.nemesis.billcheckpk')" class="playstore-button">
-  <svg
-    viewBox="0 0 512 512"
-    class="icon"
-    fill="currentColor"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <path
-      d="M99.617 8.057a50.191 50.191 0 00-38.815-6.713l230.932 230.933 74.846-74.846L99.617 8.057zM32.139 20.116c-6.441 8.563-10.148 19.077-10.148 30.199v411.358c0 11.123 3.708 21.636 10.148 30.199l235.877-235.877L32.139 20.116zM464.261 212.087l-67.266-37.637-81.544 81.544 81.548 81.548 67.273-37.64c16.117-9.03 25.738-25.442 25.738-43.908s-9.621-34.877-25.749-43.907zM291.733 279.711L60.815 510.629c3.786.891 7.639 1.371 11.492 1.371a50.275 50.275 0 0027.31-8.07l266.965-149.372-74.849-74.847z"
-    ></path>
-  </svg>
-  <span class="texts">
-    <span class="text-1">GET IT ON</span>
-    <span class="text-2">Google Play</span>
-  </span>
-</button>      
-                
-                 </div>
-            
-        </div>
-    </section>
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
 
-  
-    <section>
-  
-<form style="box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;" action="https://formspree.io/f/xovqoaob"
-  method="POST" class="form">
-    <legend><b style="font-size:150%;">Contact Me</b></legend>
-        <div class="flex">
-        <label>
-            <input style="width:86%;"required="" placeholder="" type="text" class="input" name="First Name">
-            <span>Firstname</span>
-        </label>
+        .header-content h1 {
+            font-size: 2.5rem;
+            margin: 20px 0;
+        }
 
-        <label>
-            <input required="" placeholder="" type="text" class="input" name="Last Name">
-            <span>Lastname</span>
-        </label>
-    </div>  
-    <label>
-        <input style="margin-right:10%;" required="" placeholder="" type="email" class="input" name="Email">
-        <span>Email</span>
-    </label> 
-        
-    <label>
-        <input style="margin-right:10%;" placeholder="" type="number" class="input" name="Number">
-        <span>Enter Your Contact Number</span>
-    </label>
-    <label>
-        <textarea style="margin-right:10%;" required="" id="msg" placeholder="" type="text" class="input" name="Message"></textarea>
-        <span>Message</span>
-    </label>
-    
-<button type="submit" class="button-29">Send Message</button>
-    
-    </section></form>
+        .header-content p {
+            font-size: 1.2rem;
+        }
 
-    
-    <footer>
-        <p>© 2024 Saad Arshad. All rights reserved.</p>
-    </footer>
-</body>
-</html>
-<style>
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: #333;
-}
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            color: white;
+            background-color: #6e8efb;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+        }
 
-header {
-    background-image: linear-gradient(to bottom, #2596be, #586b98, #5d4462, #452830, #21130d);
-    background-color:#6CB4EE;
-    color: white;
-    text-align: center;
-    padding: 50px 20px;
-}
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
 
-header nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.header-content h1 {
-    font-size: 3rem;
-    margin: 20px 0;
-}
-
-.header-content p {
-    font-size: 1.2rem;
-}
-
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    color: white;
-    background-color: #6e8efb;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-section {
-    padding: 50px 20px;
-    text-align: center;
-}
-
-#projects .project-grid {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.project {
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 20px;
-    width:80%;
-    hight:50%;
-    
-}
-
-form label {
-    display: block;
-    margin: 10px 0 5px;
-}
-
-form input, form textarea, form button {
-    width: 80vw;
-    height:90vh;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 20px;
-}
-
-.playstore-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid #000;
-  border-radius: 9999px;
-  background-color: rgba(0, 0, 0, 1);
-  padding: 0.625rem 1.5rem;
-  text-align: center;
-  color: rgba(255, 255, 255, 1);
-  outline: 0;
-  transition: all 0.2s ease;
-  text-decoration: none;
-}
-
-.playstore-button:hover {
-  background-color: transparent;
-  color: rgba(0, 0, 0, 1);
-}
-
-.icon {
-  height: 1.5rem;
-  width: 1.5rem;
-}
-
-.texts {
-  margin-left: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  line-height: 1;
-}
-
-.text-1 {
-  margin-bottom: 0.25rem;
-  font-size: 0.75rem;
-  line-height: 1rem;
-}
-
-.text-2 {
-  font-weight: 600;
-}
-
-
-.icon {
-  height: 1.5rem;
-  width: 1.5rem;
-}
-
-.texts {
-  margin-left: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  line-height: 1;
-}
-
-.text-1 {
-  margin-bottom: 0.25rem;
-  font-size: 0.75rem;
-  line-height: 1rem;
-}
-
-.text-2 {
-  font-weight: 600;
-}
-
-
-.form {
-  display: flex;
-  flex-direction: column;
-  gap: 10%;
-  width:87%;
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 6%;
-  position: relative;
-}
-
-.title {
-  font-size: 28px;
-  color: royalblue;
-  font-weight: 600;
-  letter-spacing: -1px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  padding-left: 30px;
-}
-
-.title::before,.title::after {
-  position: absolute;
-  content: "";
-  height: 16px;
-  width: 16px;
-  border-radius: 50%;
-  left: 0px;
-  background-color: royalblue;
-}
-
-.title::before {
-  width: 18px;
-  height: 18px;
-  background-color: royalblue;
-}
-
-.title::after {
-  width: 18px;
-  height: 18px;
-  animation: pulse 1s linear infinite;
-}
-
-.message, .signin {
-  color: rgba(88, 87, 87, 0.822);
-  font-size: 14px;
-}
-
-.signin {
-  text-align: center;
-}
-
-.signin a {
-  color: royalblue;
-}
-
-.signin a:hover {
-  text-decoration: underline royalblue;
-}
-
-.flex {
-  display: flex;
-  width: 100%;
-  gap: 6px;
-}
-
-.form label {
-  position: relative;
-}
-
-.form label .input {
-  width: 92%;
-  padding: 10px 10px 20px 10px;
-  outline: 0;
-  border: 1px solid rgba(105, 105, 105, 0.397);
-  border-radius: 10px;
-  height:30%;
-}
-
-.form label .input + span  {
-  position: absolute;
-  left: 10px;
-  top: 15px;
-  color: grey;
-  font-size: 0.9em;
-  cursor: text;
-  transition: 0.3s ease;
-}
-
-.form label .input:placeholder-shown + span {
-  top: 15px;
-  font-size: 0.9em;
-}
-
-.form label .input:focus + span,.form label .input:valid + span {
-  top: 30px;
-  font-size: 0.7em;
-  font-weight: 600;
-   
-}
-
-#msg {
-     height:100px
- }
-
-#msg:focus + span,
-#msg:valid + span {
-  top: 79%;
-  font-size: 0.8em;
-  font-weight: 600;
-}
-
-.form label .input:valid + span {
-  color: green;
-    top:50%;
-}
-
-.button-29 {
+    .button-29 {
   align-items: center;
   appearance: none;
   background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
@@ -472,28 +104,245 @@ footer {
 .button-29:active {
   box-shadow: #3c4fe0 0 3px 7px inset;
   transform: translateY(2px);
-} 
-
-img {
-    display:contain;
 }
-
-.bn45 {
-  width: 10rem;
-  height: 4rem;
+    
+    
+.playstore-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #000;
+  border-radius: 9999px;
+  background-color: rgba(0, 0, 0, 1);
+  padding: 0.625rem 1.5rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  outline: 0;
+  transition: all  .2s ease;
+  text-decoration: none;
     cursor:none;
 }
 
-@media (min-width: 1024px) {
-    form {
-        margin: 40%;
-    }
+.playstore-button:hover {
+  background-color: transparent;
+  color: rgba(0, 0, 0, 1);
 }
-</style>
 
-<script>
+.icon {
+  height: 1.5rem;
+  width: 1.5rem;
+}
 
-function btn(link){
-    setTimeout(() => {
-    window.location.href = link},500); }
-</script>
+.texts {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1;
+}
+
+.text-1 {
+  margin-bottom: 0.25rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.text-2 {
+  font-weight: 600;
+}   
+    
+    
+    
+        /* Projects Section */
+        #projects .project-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .project {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            width: calc(100% - 40px);
+            max-width: 300px;
+        }
+
+        form {
+            width: 90%;
+            max-width: 600px;
+            box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 6%;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+
+        form input, form textarea, form button {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        /* Responsive Design */
+        @media (min-width: 600px) {
+            .header-content h1 {
+                font-size: 3rem;
+            }
+
+            .header-content p {
+                font-size: 1.5rem;
+            }
+
+            .project {
+                width: calc(50% - 40px);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .header-content h1 {
+                font-size: 3.5rem;
+            }
+
+            #projects .project-grid {
+                gap: 40px;
+            }
+
+            .project {
+                width: calc(33.33% - 40px);
+            }
+
+            form {
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-content">
+            <h1>Hi, I'm <b style="color:#00FF40">Saad Arshad</b></h1>
+            <p>A Frontend Web Developer & App Developer</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a versatile developer with expertise in web development and app creation.<br> <br>I focus on building innovative, user-friendly solutions and delivering high-quality results tailored to evolving needs. <br><br>Driven by curiosity and a commitment to excellence, I aim to create impactful digital experiences.</p>
+        <img src="laptop.jpg" alt="Laptop">
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project">
+                <h3>Bill Check PK</h3>
+                <p>Bill Check PK is an Android Web App <br><br>
+                    that lets people check their 
+                    <br><br>Electricity, Gas, Water, Internet, <br><br> and Landline bills.</p><br><br>
+<a class="playstore-button" href="https://play.google.com/store/apps/details?id=com.nemesis.billcheckpk">
+  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="icon" viewBox="0 0 512 512">
+    <path d="M99.617 8.057a50.191 50.191 0 00-38.815-6.713l230.932 230.933 74.846-74.846L99.617 8.057zM32.139 20.116c-6.441 8.563-10.148 19.077-10.148 30.199v411.358c0 11.123 3.708 21.636 10.148 30.199l235.877-235.877L32.139 20.116zM464.261 212.087l-67.266-37.637-81.544 81.544 81.548 81.548 67.273-37.64c16.117-9.03 25.738-25.442 25.738-43.908s-9.621-34.877-25.749-43.907zM291.733 279.711L60.815 510.629c3.786.891 7.639 1.371 11.492 1.371a50.275 50.275 0 0027.31-8.07l266.965-149.372-74.849-74.847z"></path>
+  </svg>
+  <span class="texts">
+    <span class="text-1">GET IT ON</span>
+    <span class="text-2">Google Play</span>
+  </a>
+            </div>
+                
+                
+                
+                
+                
+            <div class="project">
+                <h3>Tic Master</h3>
+                <p>Tic Master is a Tic Tac Toe <br> <br> Game with Multiple Modes <br><br> Like 5x5, 4x4, and 3x3. <br><br>
+                    It Features AI opponents <br><br>& Local Multiplayer.</p>
+
+<a class="playstore-button" href="index21.html">
+  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="icon" viewBox="0 0 512 512">
+    <path d="M99.617 8.057a50.191 50.191 0 00-38.815-6.713l230.932 230.933 74.846-74.846L99.617 8.057zM32.139 20.116c-6.441 8.563-10.148 19.077-10.148 30.199v411.358c0 11.123 3.708 21.636 10.148 30.199l235.877-235.877L32.139 20.116zM464.261 212.087l-67.266-37.637-81.544 81.544 81.548 81.548 67.273-37.64c16.117-9.03 25.738-25.442 25.738-43.908s-9.621-34.877-25.749-43.907zM291.733 279.711L60.815 510.629c3.786.891 7.639 1.371 11.492 1.371a50.275 50.275 0 0027.31-8.07l266.965-149.372-74.849-74.847z"></path>
+  </svg>
+  <span class="texts">
+    <span class="text-1">GET IT ON</span>
+    <span class="text-2">Google Play</span>
+  </span>
+</a>    
+                
+            </div>
+            <div class="project">
+                <h3>Card Memory</h3>
+                <p>A Memory Game where players <br><br>Match Similar Cards from a Group of Cards</p>
+                
+              <a class="playstore-button" href="index21.html">
+  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="icon" viewBox="0 0 512 512">
+    <path d="M99.617 8.057a50.191 50.191 0 00-38.815-6.713l230.932 230.933 74.846-74.846L99.617 8.057zM32.139 20.116c-6.441 8.563-10.148 19.077-10.148 30.199v411.358c0 11.123 3.708 21.636 10.148 30.199l235.877-235.877L32.139 20.116zM464.261 212.087l-67.266-37.637-81.544 81.544 81.548 81.548 67.273-37.64c16.117-9.03 25.738-25.442 25.738-43.908s-9.621-34.877-25.749-43.907zM291.733 279.711L60.815 510.629c3.786.891 7.639 1.371 11.492 1.371a50.275 50.275 0 0027.31-8.07l266.965-149.372-74.849-74.847z"></path>
+  </svg>
+  <span class="texts">
+    <span class="text-1">GET IT ON</span>
+    <span class="text-2">Google Play</span>
+  </span>
+</a>    
+                
+                
+            </div>      
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="https://formspree.io/f/xovqoaob" method="POST">
+            <label>
+                First Name
+                <input type="text" name="First Name" required>
+            </label>
+            <label>
+                Last Name
+                <input type="text" name="Last Name" required>
+            </label>
+            <label>
+                Email
+                <input type="email" name="Email" required>
+            </label>
+            <label>
+                Message
+                <textarea name="Message" required></textarea>
+            </label>
+            <button type="submit" class="button-29">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 Saad Arshad. All rights reserved.</p>
+    </footer>
+</body>
+    </html>
